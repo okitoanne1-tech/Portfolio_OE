@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OE-Architecture — Bâtir solide, vivre mieux !</title>
+<meta name="description" content="OE-Architecture : conception architecturale, études, exécution, suivi de chantier, rénovation et vente de matériaux de construction à Kinshasa. Bâtir solide, vivre mieux !">
+<meta name="theme-color" content="#070b25">
+<meta property="og:title" content="OE-Architecture — Bâtir solide, vivre mieux !">
+<meta property="og:description" content="Nous concevons et réalisons des projets architecturaux et de construction adaptés à vos besoins.">
+<meta property="og:image" content="assets/immeuble-facade.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<!-- FOND ANIMÉ : un bâtiment qui se construit -->
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="header">
+  <a href="#top" class="brand" aria-label="OE-Architecture, accueil">
+    <img src="assets/logo-oe.svg" alt="">
+    <span><b>Oe-Architecture</b><small>Build</small></span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#apropos">Qui sommes-nous</a>
+    <a href="#services">Services</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#pourquoi">Pourquoi nous</a>
+    <a href="#partenaires">Partenaires</a>
+    <a href="#contact" class="btn btn--small magnetic">Demander un devis</a>
+  </nav>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+</header>
+
+<main id="main">
+
+<!-- 01 ACCUEIL -->
+<section class="hero" id="top">
+  <div class="ghost" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="eyebrow reveal">Architecture · Construction · Kinshasa</p>
+      <h1 class="chars" aria-label="OE-Architecture">OE-Architecture</h1>
+      <p class="slogan reveal">Bâtir solide, <em>vivre mieux&nbsp;!</em></p>
+      <p class="hero__intro reveal">Nous concevons et réalisons des projets architecturaux et de construction adaptés à vos besoins, en valorisant la culture congolaise.</p>
+      <div class="hero__cta reveal">
+        <a href="#contact" class="btn magnetic">Demander un devis →</a>
+        <a href="#realisations" class="btn btn--ghost magnetic">Voir nos réalisations</a>
+      </div>
+    </div>
+    <div class="hero__visual reveal">
+      <figure class="frame frame--a"><img src="assets/villa-moderne.jpg" alt="Villa moderne conçue par OE-Architecture" data-parallax="0.05"></figure>
+      <figure class="frame frame--b"><img src="assets/immeuble-r2.jpg" alt="Immeuble résidentiel R+2 en 3D"></figure>
+      <div class="chip"><b>OE</b><span>Build</span></div>
+    </div>
+  </div>
+  <a href="#apropos" class="hero__scroll">Défiler ↓</a>
+</section>
+
+<!-- QUI SOMMES-NOUS -->
+<section class="section about" id="apropos">
+  <div class="about__text">
+    <p class="label reveal">Qui sommes-nous ?</p>
+    <h2 class="split">Une entreprise de construction qui vous accompagne</h2>
+    <p class="lead reveal">OE-Architecture est une entreprise de construction qui vous accompagne dans la <strong>conception</strong>, la <strong>réalisation</strong> et la <strong>fourniture de matériaux</strong>, avec des services en architecture, électricité, informatique et bâtiment.</p>
+    <p class="reveal">Nous intervenons comme exécutant des travaux de construction et d'architecture au sein de <strong>COLORZONE CD</strong>, en contribuant à la réalisation de projets de qualité.</p>
+    <blockquote class="quote reveal">Une architecture qui valorise la culture congolaise à travers une approche <strong>durable</strong>, <strong>esthétique</strong> et <strong>respectueuse de l'environnement</strong>.</blockquote>
+    <ul class="stats">
+      <li class="reveal"><b data-count="6">0</b><span>services</span></li>
+      <li class="reveal"><b data-count="2">0</b><span>structures : OE-Architecture et The Designer</span></li>
+      <li class="reveal"><b data-count="5">0</b><span>valeurs qui nous guident</span></li>
+    </ul>
+  </div>
+  <figure class="about__photo reveal" data-tilt>
+    <img src="assets/chantier-ouvrier-oe.jpg" alt="Un ouvrier en gilet OE-Architecture sur un chantier" loading="lazy">
+    <figcaption>Sur le terrain, chaque étape compte.</figcaption>
+  </figure>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section__head">
+    <p class="label reveal">Nos services</p>
+    <h2 class="split">De la première idée à la livraison</h2>
+  </div>
+  <div class="services">
+    <article class="service reveal" data-tilt><span class="num">01</span><svg viewBox="0 0 48 48"><path d="M6 40h36M10 40V18l14-10 14 10v22M20 40V28h8v12"/></svg><h3>Conception architecturale</h3><p>Plans, façades, coupes et visualisation 3D pour donner forme à votre projet.</p></article>
+    <article class="service reveal" data-tilt><span class="num">02</span><svg viewBox="0 0 48 48"><path d="M8 8h32v32H8zM8 20h32M20 8v32"/></svg><h3>Études</h3><p>Études de projets, optimisation des espaces et solutions adaptées à vos besoins.</p></article>
+    <article class="service reveal" data-tilt><span class="num">03</span><svg viewBox="0 0 48 48"><path d="M4 42h40M10 42V22h10v20M20 42V10h12v32M32 42V26h8v16"/></svg><h3>Exécution</h3><p>Réalisation des travaux de construction, coordination et accompagnement des chantiers.</p></article>
+    <article class="service reveal" data-tilt><span class="num">04</span><svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="13"/><path d="m31 31 11 11M15 21l5 5 8-9"/></svg><h3>Suivi et contrôle du chantier</h3><p>Suivi de l'avancement, contrôle de la conformité et coordination des interventions.</p></article>
+    <article class="service reveal" data-tilt><span class="num">05</span><svg viewBox="0 0 48 48"><path d="M10 42V20l14-10 14 10v22zM28 14l8-8M6 30h6M36 36h6"/></svg><h3>Rénovation et réhabilitation</h3><p>Offrez une nouvelle vie à vos espaces : chaque détail optimisé pour plus de confort, de fonctionnalité et de valeur.</p></article>
+    <article class="service reveal" data-tilt><span class="num">06</span><svg viewBox="0 0 48 48"><path d="M6 18h18v10H6zM24 18h18v10H24zM15 28h18v10H15zM6 8h18v10M24 8h18v10"/></svg><h3>Vente de matériaux et matériels de construction</h3><p>Blocs (briques), menuiserie, location d'échafaudage, pavés, carreaux et faïences — avec livraison.</p></article>
+  </div>
+
+  <div class="designer reveal">
+    <div class="designer__logo"><img src="assets/logo-the-designer.png" alt="The Designer by OE-Architecture" loading="lazy"></div>
+    <div>
+      <h3>The Designer</h3>
+      <p>Notre structure dédiée à tout ce qui touche à la <strong>vente</strong> et à la <strong>décoration intérieure</strong> : décoration, design et modélisation, aménagement intérieur.</p>
+    </div>
+  </div>
+
+  <figure class="brochure reveal">
+    <button class="open-img" data-full="assets/brochure-services.jpg" aria-label="Agrandir la brochure de nos services"><img src="assets/brochure-services.jpg" alt="Brochure des services d'OE-Architecture : construction, rénovation, décoration, vente de matériaux" loading="lazy"></button>
+    <figcaption>Nos services en un coup d'œil — touchez pour agrandir.</figcaption>
+  </figure>
+</section>
+
+<!-- NOTRE APPROCHE -->
+<section class="section section--panel" id="approche">
+  <div class="section__head">
+    <p class="label reveal">Notre approche</p>
+    <h2 class="split">Écoute, conception, exécution, suivi</h2>
+  </div>
+  <p class="lead reveal">Chaque projet commence par une écoute attentive de vos besoins. Nous privilégions une approche collaborative qui associe conception réfléchie, rigueur technique et suivi des travaux.</p>
+  <ol class="steps">
+    <li class="reveal"><b>1</b><h3>Première discussion</h3><p>Nous écoutons vos besoins, vos attentes et vos contraintes.</p></li>
+    <li class="reveal"><b>2</b><h3>Conception</h3><p>Plans, façades, 3D : nous proposons des solutions adaptées.</p></li>
+    <li class="reveal"><b>3</b><h3>Exécution</h3><p>Réalisation des travaux avec rigueur et coordination.</p></li>
+    <li class="reveal"><b>4</b><h3>Suivi et contrôle</h3><p>Avancement, conformité et qualité jusqu'à la livraison.</p></li>
+  </ol>
+</section>
+
+<!-- RÉALISATIONS -->
+<section class="section" id="realisations">
+  <div class="section__head">
+    <p class="label reveal">Nos réalisations</p>
+    <h2 class="split">Ce que OE-Architecture sait faire</h2>
+  </div>
+  <p class="lead reveal">Chantiers, plans et rendus 3D : chaque projet indique son statut, son lieu et notre rôle.</p>
+  <div class="filters reveal" role="tablist" aria-label="Filtrer les projets">
+    <button class="on" data-f="all">Tous</button>
+    <button data-f="realise">Réalisé</button>
+    <button data-f="en-cours">En cours</button>
+    <button data-f="etude">Étude / conception 3D</button>
+  </div>
+  <div class="projects" id="projects"></div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="section section--panel" id="pourquoi">
+  <div class="section__head">
+    <p class="label reveal">Pourquoi choisir OE-Architecture ?</p>
+    <h2 class="split">Ce qui nous distingue</h2>
+  </div>
+  <div class="why">
+    <article class="why__item reveal" data-tilt><h3>Expertise architecturale</h3><p>Des solutions adaptées aux besoins et aux contraintes de chaque projet.</p></article>
+    <article class="why__item reveal" data-tilt><h3>Qualité et rigueur</h3><p>Une attention particulière à la qualité des travaux et au suivi.</p></article>
+    <article class="why__item reveal" data-tilt><h3>Architecture durable</h3><p>Valorisation des matériaux et des solutions adaptés au contexte local.</p></article>
+    <article class="why__item reveal" data-tilt><h3>Identité culturelle</h3><p>Une architecture qui tient compte de la culture et de l'environnement congolais.</p></article>
+  </div>
+</section>
+
+<!-- VALEURS / ENGAGEMENT / SAVOIR-FAIRE / VISION -->
+<section class="section" id="valeurs">
+  <div class="section__head">
+    <p class="label reveal">Notre identité</p>
+    <h2 class="split">Ce qui nous guide</h2>
+  </div>
+  <div class="tabs reveal">
+    <div class="tabs__nav" role="tablist">
+      <button role="tab" class="on" data-t="t1">Nos valeurs</button>
+      <button role="tab" data-t="t2">Notre engagement</button>
+      <button role="tab" data-t="t3">Notre savoir-faire</button>
+      <button role="tab" data-t="t4">Notre vision</button>
+    </div>
+    <div class="tabs__body">
+      <div class="tab on" id="t1">
+        <ul class="values">
+          <li><b>Fidélité et confiance</b>Bâtir une relation durable avec nos clients, fondée sur la confiance, l'écoute et le respect des engagements.</li>
+          <li><b>Travail et rigueur</b>Une attention particulière à chaque étape de nos projets, de la conception à l'exécution.</li>
+          <li><b>Qualité et excellence</b>Rechercher des solutions architecturales et constructives adaptées aux besoins de nos clients.</li>
+          <li><b>Engagement</b>Accompagner chaque projet avec sérieux, responsabilité et professionnalisme.</li>
+          <li><b>Valorisation culturelle</b>Promouvoir une architecture qui tient compte de notre identité, de notre environnement et de nos réalités locales.</li>
+        </ul>
+      </div>
+      <div class="tab" id="t2"><p class="big">« Chez OE-Architecture, nous nous engageons à accompagner chaque projet avec professionnalisme, rigueur et responsabilité. Notre priorité est de construire une relation de confiance avec nos clients, tout en proposant des solutions architecturales adaptées, durables et valorisant notre environnement. »</p></div>
+      <div class="tab" id="t3">
+        <ul class="values values--check">
+          <li>La maîtrise de la conception architecturale.</li>
+          <li>La planification et l'organisation des travaux.</li>
+          <li>La coordination et le suivi des chantiers.</li>
+          <li>La recherche de solutions adaptées aux contraintes techniques.</li>
+          <li>La valorisation des matériaux et des ressources locales.</li>
+        </ul>
+      </div>
+      <div class="tab" id="t4"><p class="big">« Contribuer à la transformation du cadre bâti en RDC à travers une architecture durable, fonctionnelle et innovante, qui valorise l'identité culturelle congolaise et améliore les conditions de vie. »</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTENAIRES -->
+<section class="section section--panel" id="partenaires">
+  <div class="section__head">
+    <p class="label reveal">Nos partenaires</p>
+    <h2 class="split">COLORZONE CD</h2>
+  </div>
+  <div class="partner reveal">
+    <div class="partner__logo"><img src="assets/logo-colorzone.jpg" alt="Logo COLORZONE CD" loading="lazy"></div>
+    <div class="partner__text">
+      <p class="lead">COLORZONE CD valorise la culture congolaise à travers une approche durable, esthétique et respectueuse de l'environnement.</p>
+      <p>Retrouvez nos services sur le site de COLORZONE.</p>
+      <a href="https://www.colorzonecd.com" target="_blank" rel="noopener" class="btn magnetic">Visiter www.colorzonecd.com ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT & DEVIS -->
+<section class="section contact" id="contact">
+  <div class="contact__intro">
+    <p class="label reveal">Contact</p>
+    <h2 class="split">Parlons de votre projet</h2>
+    <p class="lead reveal">Décrivez-nous votre besoin : nous vous répondons rapidement avec une proposition adaptée.</p>
+    <div class="coords reveal">
+      <a href="https://wa.me/79398480428" target="_blank" rel="noopener"><span>☎</span><div><b>+7 (939) 848-04-28</b><small>Téléphone / WhatsApp</small></div></a>
+      <a href="mailto:oearchitecture04@gmail.com"><span>✉</span><div><b>oearchitecture04@gmail.com</b><small>Adresse e-mail professionnelle</small></div></a>
+      <div class="loc"><span>⌖</span><div><b>Kinshasa</b><small>République démocratique du Congo</small></div></div>
+    </div>
+    <!-- ✏️ Remplace les liens par les pages officielles d'OE-Architecture -->
+    <ul class="social reveal" aria-label="Réseaux sociaux">
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.5-3.2h-3.2V7.9c0-.9.4-1.6 1.7-1.6h1.6V3.5c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.7V13h2.7v8z"/></svg></a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3zm0 1.8a2.7 2.7 0 0 0-2.7 2.7v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7zM12 7.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 1.8a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4zm4.9-2.9a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1z"/></svg></a></li>
+      <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 3c.3 2.2 1.6 3.6 3.8 3.8v3.1c-1.4.1-2.7-.3-3.8-1.1v6.1c0 3.2-2.4 5.4-5.4 5.4-3 0-5.3-2.3-5.3-5.2 0-3.2 2.7-5.5 5.9-5v3.2c-1.6-.4-2.7.6-2.7 1.9 0 1.1.9 2 2 2 1.2 0 2-.9 2-2.2V3z"/></svg></a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.5 8.8h3.6V20H4.5zM6.3 3.2a2.1 2.1 0 1 1 0 4.2 2.1 2.1 0 0 1 0-4.200zM10.2 8.8h3.4v1.5c.5-.9 1.700-1.800 3.500-1.800 3.700 0 4.400 2.400 4.400 5.600V20h-3.600v-5.200c0-1.300 0-2.900-1.800-2.900s-2.100 1.400-2.100 2.800V20h-3.600z"/></svg></a></li>
+    </ul>
+  </div>
+
+  <form class="form reveal" id="quoteForm" novalidate>
+    <h3>Demande de devis</h3>
+    <label>Nom complet <input name="nom" required autocomplete="name"></label>
+    <div class="row">
+      <label>Téléphone / WhatsApp <input type="tel" name="telephone" placeholder="+243 …" required autocomplete="tel"></label>
+      <label>Adresse e-mail <input type="email" name="email" autocomplete="email"></label>
+    </div>
+    <label>Service recherché
+      <select name="service" required>
+        <option value="">Choisir un service…</option>
+        <option>Conception architecturale</option>
+        <option>Études</option>
+        <option>Exécution des travaux</option>
+        <option>Suivi et contrôle du chantier</option>
+        <option>Rénovation et réhabilitation</option>
+        <option>Vente de matériaux et matériels de construction</option>
+        <option>Décoration intérieure (The Designer)</option>
+        <option>Autre</option>
+      </select>
+    </label>
+    <label>Description du projet <textarea name="description" rows="5" required placeholder="Type de projet, lieu, surface, budget, délais…"></textarea></label>
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="form__actions">
+      <button type="submit" class="btn btn--big magnetic">Envoyer ma demande</button>
+      <button type="button" class="btn btn--wa" id="waBtn">Écrire sur WhatsApp</button>
+    </div>
+    <p class="form__msg" role="status" aria-live="polite"></p>
+  </form>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <a href="#top" class="brand"><img src="assets/logo-oe.svg" alt=""><span><b>Oe-Architecture</b><small>Build</small></span></a>
+    <p class="footer__slogan">Bâtir solide, vivre mieux !</p>
+  </div>
+  <div class="footer__bottom"><p>Copyright © 2026 OE-Architecture</p><a href="#top">Retour en haut ↑</a></div>
+</footer>
+
+<!-- Fenêtre projet -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal__box">
+    <button class="modal__close" aria-label="Fermer">×</button>
+    <div class="modal__gallery"><img id="mMain" alt=""><div class="modal__thumbs" id="mThumbs"></div></div>
+    <div class="modal__info" id="mInfo"></div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox__close" aria-label="Fermer">×</button><img alt=""></div>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
